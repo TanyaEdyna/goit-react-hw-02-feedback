@@ -1,0 +1,12 @@
+.btn_list {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin: 0 auto;
+    margin-top: 24px;
+}
+.feedback_btn {
+    width: 80px;
+    height: 40px;
+}
