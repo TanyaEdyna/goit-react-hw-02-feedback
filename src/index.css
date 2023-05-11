@@ -1,4 +1,5 @@
-@import-normalize; /* bring in normalize.css styles */
+@import 'normalize.css';
+/* bring in normalize.css styles */
 
 body {
   margin: 0;
@@ -37,3 +38,4 @@ input {
 button {
   cursor: pointer;
 }
+

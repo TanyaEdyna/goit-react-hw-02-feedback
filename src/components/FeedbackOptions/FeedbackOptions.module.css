@@ -9,4 +9,7 @@
 .feedback_btn {
     width: 80px;
     height: 40px;
+    color:blueviolet;
+    text-transform: capitalize;
+    font-weight: 700;
 }

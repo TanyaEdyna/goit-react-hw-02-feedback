@@ -11,13 +11,18 @@ class Statistics extends Component {
                 <h2 className={css.statistics_title}>Statistics:</h2>
                 <ul className={css.statistic_list}>
                     <li className={css.statistic_item}>
-                        <p>Good: {good}</p>
+                        <p>Good: 
+                        <span className={css.statistic_number}>{good}</span>
+                        </p>
                     </li>
                     <li className={css.statistic_item}>
-                        <p>Neutral: {neutral}</p>
+                        <p>Neutral: 
+                        <span className={css.statistic_number}>{neutral}</span></p>
                     </li>
                     <li className={css.statistic_item}>
-                        <p>Bad: {bad}</p>
+                        <p>Bad:
+                        <span className={css.statistic_number}>{bad}</span>
+                        </p>
                     </li>
                 </ul>
                 <ul className={css.statistic_count_list}>
