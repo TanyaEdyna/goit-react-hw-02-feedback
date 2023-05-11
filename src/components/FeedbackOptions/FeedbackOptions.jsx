@@ -2,9 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import css from "./FeedbackOptions.module.css";
 
-const FeedbackOptions = {
-    render() {
-        const { options, onLeaveFeedback } = this.props;
+const FeedbackOptions = ({options, onLeaveFeedback}) => {
         return (
             <ul className={css.btn_list}>
                 {options.map(nameButton => (
@@ -20,7 +18,7 @@ const FeedbackOptions = {
             </ul>
         )
     }
-}
+
 FeedbackOptions.propTypes = {
     options: PropTypes.arrayOf(PropTypes.string).isRequired,//масив рядків
     onLeaveFeedback: PropTypes.func.isRequired,

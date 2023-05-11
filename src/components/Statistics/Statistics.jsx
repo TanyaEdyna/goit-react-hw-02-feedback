@@ -2,9 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import css from "./Statistics.module.css";
 
-const Statistics = {
-    render() {
-        const { good, neutral, bad, total, positivePercentage } = this.props;
+const Statistics = ({good, neutral, bad, total, positivePercentage}) => {
         return (
             <div className={css.statistic_wrap}>
                 <h2 className={css.statistics_title}>Statistics:</h2>
@@ -35,7 +33,7 @@ const Statistics = {
             </div>
         )
     }
-}
+
 Statistics.propTypes = {
     good: PropTypes.number.isRequired,
     neutral: PropTypes.number.isRequired,
