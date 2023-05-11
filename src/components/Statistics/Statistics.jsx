@@ -1,9 +1,8 @@
 import PropTypes from 'prop-types';
-import { Component } from 'react';
 import React from 'react';
 import css from "./Statistics.module.css";
 
-class Statistics extends Component {
+const Statistics = {
     render() {
         const { good, neutral, bad, total, positivePercentage } = this.props;
         return (

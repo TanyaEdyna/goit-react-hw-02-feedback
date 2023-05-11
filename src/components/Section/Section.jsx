@@ -1,9 +1,8 @@
 import PropTypes from 'prop-types';
-import { Component } from 'react';
 import React from 'react';
 import css from "./Section.module.css";
 
-class Section extends Component {
+const Section = {
     render() {
         const { title, children } = this.props;
         return (

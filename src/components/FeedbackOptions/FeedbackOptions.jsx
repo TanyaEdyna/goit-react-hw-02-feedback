@@ -1,9 +1,8 @@
 import PropTypes from 'prop-types';
-import { Component } from 'react';
 import React from 'react';
 import css from "./FeedbackOptions.module.css";
 
-class FeedbackOptions extends Component {
+const FeedbackOptions = {
     render() {
         const { options, onLeaveFeedback } = this.props;
         return (
