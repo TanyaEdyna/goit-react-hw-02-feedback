@@ -23,6 +23,7 @@ countTotalFeedback = () => {  //код обчислює суму змінних 
 }
   
 countPositiveFeedbackPercentage = () => {//код обчислює відсоток позитивних відгуків
+  const { good } = this.state;
   const totalFeedback = this.countTotalFeedback();
 
   if (totalFeedback === 0) {
