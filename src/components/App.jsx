@@ -38,12 +38,13 @@ countPositiveFeedbackPercentage = () => {//код обчислює відсот�
 
 
   render() {
-     const { good, neutral, bad } = this.state;
+    const { good, neutral, bad } = this.state;
+    const options = Object.keys(this.state);
     return (
       <>
         <Section title="Please, leave feedback" >
           <FeedbackOptions
-            options={["good", "neutral", "bad"]}
+            options={options}
             onLeaveFeedback={this.handleFeedback}/>
           <Statistics good={good} neutral={neutral} bad={bad}
             total={this.countTotalFeedback()}
